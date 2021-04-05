@@ -1,0 +1,170 @@
+/* ESTILOS GENERALES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#1d9d61;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.title-primary {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* tarjeta de perfil */
+.container {
+
+    margin-top: 8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    position: relative;
+    width: 37.5rem;
+    height: 21.8rem;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: linear-gradient(45deg, #1a2f3f, #7094ce); */
+    backdrop-filter: blur(2.1px);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+.container .card .perfil {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 21rem;
+    width: 32rem;
+    transition: 0.5s;
+
+
+}
+
+.container .card:hover .perfil{
+    left: 70%;
+    height: 25rem;
+    width: 38rem;
+    
+
+}
+
+.container .card .content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    top: -2rem;
+    opacity: 0;
+
+    visibility: hidden;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.container .card .content .titlle {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 2rem;
+}
+
+.container .card .content .pa {
+    color: #fff;
+
+}
+
+@media (max-width: 61.9rem) {
+    .container .card {
+        width: auto;
+        max-width: 37.5rem;
+        align-items: flex-start;
+    }
+    .container .card:hover {
+        height: 37.5rem;
+
+    }
+
+    .container .card:hover .perfil{
+        left: 50%;
+        height: 350px;
+    }
+
+    .container .card .content {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+
+    }
+}
+
+/* PROYECTOS */
+
+.title-secundary {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.projects {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .proyecto {
+    
+    width: 300px; 
+    margin: 30px; 
+    text-align: center;
+    font-size: 1.26rem;
+    padding: 2.5%;
+    display: inline-block;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
+    backdrop-filter: blur(2.1px);
+}
+
+.projects .proyecto .photo {
+    width: 200px;
+    height: 120px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.69);
+}
