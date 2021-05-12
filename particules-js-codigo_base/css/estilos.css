@@ -15,7 +15,7 @@ body {
 }
 .color {
     position: absolute;
-    filter: blur(150px);
+    /* filter: blur(150px); */
     z-index: -1;
 }
 
